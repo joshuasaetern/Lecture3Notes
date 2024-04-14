@@ -14,6 +14,9 @@ namespace Lecture3Notes
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// Joshua Saetern
+    /// 04.13.2024
+    /// Lecture 3 - S24 - Notes - Rich Text Box
     public partial class MainWindow : Window
     {
         public MainWindow()
