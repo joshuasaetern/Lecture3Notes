@@ -20,5 +20,47 @@ namespace Lecture3Notes
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //Create string variables to store first and last name
+                String firstName = txtBoxFirstName.Text;
+                String lastName = txtBoxLastName.Text;
+                String address = runAddress.Text;
+
+                //Concatenate into full name
+                String fullName = $"{firstName} {lastName}";
+
+                //Display to our richTextBox
+                runNameDisplay.Text = fullName;
+                runAddressDisplay.Text = address;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void richTextBoxInfo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtBoxFirstName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtBoxLastName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void richTxtBoxAddress_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
